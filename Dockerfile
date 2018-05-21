@@ -2,6 +2,11 @@ FROM alpine:3.7
 
 MAINTAINER Sergey Kardashov <krosh961@yandex.ru>
 
+LABEL org.label-schema.name="alpine3.7" \
+      org.label-schema.description="This is a micro docker container based on Alpine 3.7" \
+      org.label-schema.url="https://hub.docker.com/r/krosh961/alpine3.7-docker/" \
+      org.label-schema.vcs-url="https://github.com/krosh961/alpine3.7-docker" 
+
 COPY root/. /
 
 RUN echo "@community http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
@@ -15,7 +20,7 @@ RUN echo "@community http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/
 
     # Make info file about this build
     mkdir -p /etc/BUILDS/ && \
-    printf "Build of krosh961/alpine-micro:3.7, date: %s\n"  `date -u +"%Y-%m-%dT%H:%M:%SZ"` > /etc/BUILDS/alpine-micro && \
+    printf "Build of krosh961/alpine3.7-docker, date: %s\n"  `date -u +"%Y-%m-%dT%H:%M:%SZ"` > /etc/BUILDS/alpine-micro && \
 
     # install extra from github, including replacement for process 0 (init)
 

@@ -121,7 +121,7 @@ To get list of available timezones do
 Add the environment variable TIMEZONE to the desired timezone, i.e to set timezone to 
 CET Stockhome
 
-	docker run -d -e TIMEZONE=Europa/Stockholm nimmis/alpine-micro
+	docker run -d -e TIMEZONE=Europa/Stockholm krosh961/alpine3.7-docker
 
 ##### set timezone in running container
 
@@ -151,19 +151,3 @@ If you have any problems with or questions about this image, please contact us b
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-## TAGs
-
-This image only contains the latest versions of Apline, the versions are
-nimmis/alpine-micro:<tag> where tag is
-
-| Tag    | Alpine version | size |
-| ------ | -------------- | ---- |
-| latest |  latest/3.6    | [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro.svg)](https://microbadger.com/images/nimmis/alpine-micro "Get your own image badge on microbadger.com") | 
-| 3.7    |  3.7           | [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro:3.7.svg)](https://microbadger.com/images/nimmis/alpine-micro:3.7 "Get your own image badge on microbadger.com") |
-| 3.6    |  3.6           | [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro:3.6.svg)](https://microbadger.com/images/nimmis/alpine-micro:3.6 "Get your own image badge on microbadger.com") |
-| 3.5    |  3.5           | [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro:3.5.svg)](https://microbadger.com/images/nimmis/alpine-micro:3.5 "Get your own image badge on microbadger.com") |
-| 3.4    |  3.4           | [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro:3.4.svg)](https://microbadger.com/images/nimmis/alpine-micro:3.4 "Get your own image badge on microbadger.com") |
-| 3.3    |  3.3           | [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro:3.3.svg)](https://microbadger.com/images/nimmis/alpine-micro:3.3 "Get your own image badge on microbadger.com") |
-| 3.2    |  3.2           | [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro:3.2.svg)](https://microbadger.com/images/nimmis/alpine-micro:3.2 "Get your own image badge on microbadger.com") |
-| 3.1    |  3.1           | [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro:3.1.svg)](https://microbadger.com/images/nimmis/alpine-micro:3.1 "Get your own image badge on microbadger.com") |
-| edge   |  edge          | [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro:edge.svg)](https://microbadger.com/images/nimmis/alpine-micro:edge "Get your own image badge on microbadger.com") |
