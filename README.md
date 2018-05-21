@@ -1,7 +1,7 @@
 ## microcontainer based on Alpine with working init process
-[![](https://images.microbadger.com/badges/image/nimmis/alpine-micro.svg)](https://microbadger.com/images/nimmis/alpine-micro "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/krosh961/alpine3.7-docker.svg)](https://microbadger.com/images/krosh961/alpine3.7-docker "Get your own image badge on microbadger.com")
 
-This is a very small container (total 7.7 Mb) but still have a working init process, crond, syslog and logrotate. This is the base image for all my other microcontainers
+This is a very small container, but still have a working init process, crond, syslog and logrotate. This is the base image for all my other microcontainers
 
 ### Why use this image
 
@@ -95,7 +95,7 @@ Also there are fixed (besideds the init process) assosiated with running linux i
 
 This continer should normaly run as a daemon i.e with the `-d` flag attached
 
-	docker run -d nimmis/alpine-micro
+	docker run -d krosh961/alpine3.7-docker
 
 Accessing the container with a shell can be done with
 
@@ -134,11 +134,11 @@ Execute the command on the container as
 Execute the following command, it will list available timezones and then
 remove the container
 
-	docker run --rm nimmis/alpine-micro set_tz list
+	docker run --rm krosh961/alpine3.7-docker set_tz list
 
 ## Issues
 
-If you have any problems with or questions about this image, please contact us by submitting a ticket through a [GitHub issue](https://github.com/nimmis/docker-alpine-micro/issues "GitHub issue")
+If you have any problems with or questions about this image, please contact us by submitting a ticket through a [GitHub issue](https://github.com/krosh961/alpine3.7-docker/issues "GitHub issue")
 
 1. Look to see if someone already filled the bug, if not add a new one.
 2. Add a good title and description with the following information.
